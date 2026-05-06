@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PharmaGen Therapeutics | Innovating Health, Improving Lives</title>
+    <style>
+        :root {
+            --primary: #0284c7;
+            --secondary: #0f172a;
+            --accent: #38bdf8;
+            --text: #334155;
+            --light: #f8fafc;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            color: var(--text);
+            background-color: var(--light);
+            line-height: 1.6;
+        }
+
+        /* Header / Navigation */
+        header {
+            background-color: var(--white);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--secondary);
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 100%);
+            color: var(--white);
+            padding: 5rem 2rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            font-size: 1.1rem;
+            color: #e2e8f0;
+        }
+
+        .btn {
+            background-color: var(--accent);
+            color: var(--secondary);
+            padding: 0.8rem 1.8rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background-color: var(--white);
+            transform: translateY(-2px);
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--secondary);
+            font-size: 2.2rem;
+        }
+
+        /* Features / Services */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.03);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0,0,0,0.08);
+        }
+
+        .card h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        /* Additional Information Section */
+        .info-section {
+            background-color: var(--white);
+            padding: 4rem 2rem;
+            margin-top: 4rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            align-items: center;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--secondary);
+            color: #94a3b8;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        footer p {
+            margin-bottom: 1rem;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            list-style: none;
+        }
+
+        .social-links a {
+            color: #94a3b8;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: var(--white);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">PharmaGen Therapeutics</a>
+            <ul class="nav-links">
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Our Research</a></li>
+                <li><a href="#pipeline">Clinical Pipeline</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Pioneering the Future of Healthcare</h1>
+        <p>At PharmaGen Therapeutics, we dedicate our resources and scientific expertise to develop life-changing therapies for complex diseases, bringing hope and better health to patients worldwide.</p>
+        <a href="#services" class="btn">Explore Our Innovations</a>
+    </section>
+
+    <div class="container" id="services">
+        <h2 class="section-title">Our Therapeutic Areas</h2>
+        
+        <div class="grid">
+            <div class="card">
+                <h3>Oncology</h3>
+                <p>Developing targeted immunotherapies and novel treatments designed to fight resistant cancers and improve overall patient survival rates.</p>
+            </div>
+            <div class="card">
+                <h3>Neurology</h3>
+                <p>Focusing on neurodegenerative conditions by developing treatments designed to slow disease progression and enhance neurological health.</p>
+            </div>
+            <div class="card">
+                <h3>Immunology</h3>
+                <p>Advancing therapies for autoimmune and inflammatory diseases to help restore immune system balance and improve quality of life.</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="info-section">
+        <div class="info-grid">
+            <div>
+                <h2>Global Commitment to Research</h2>
+                <p style="margin-top: 1rem; margin-bottom: 1.5rem;">We collaborate with top academic and clinical centers to transform laboratory discoveries into actionable medical solutions. Our dedication to compliance, ethics, and sustainability drives our daily operations.</p>
+                <a href="#contact" class="btn" style="background-color: var(--primary); color: var(--white);">Partner With Us</a>
+            </div>
+            <div>
+                <h2>Our Network Websites</h2>
+                <ul style="list-style-type: none; margin-top: 1rem; line-height: 2;">
+                    <li><i style="color: var(--primary);">✔</i> <a href="#" style="text-decoration: none; color: var(--text);">PharmaGen Clinical Trials Registry</a></li>
+                    <li><i style="color: var(--primary);">✔</i> <a href="#" style="text-decoration: none; color: var(--text);">PharmaGen Investor Relations Portal</a></li>
+                    <li><i style="color: var(--primary);">✔</i> <a href="#" style="text-decoration: none; color: var(--text);">PharmaGen Global Supply Chain</a></li>
+                    <li><i style="color: var(--primary);">✔</i> <a href="#" style="text-decoration: none; color: var(--text);">Ethics and Compliance Portal</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <p>&copy; 2026 PharmaGen Therapeutics, Inc. All rights reserved.</p>
+        <p>Headquarters: 100 Innovation Boulevard, Suite 500, Cambridge, MA 02142 | Phone: (555) 019-2834</p>
+        <ul class="social-links">
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">ResearchGate</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>
